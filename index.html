@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black History Month Jeopardy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Logo -->
+  <div id="logo-container">
+    <img src="logo.png" alt="Jeopardy Logo" id="logo">
+  </div>
+
+  <h1>Black History Month Jeopardy</h1>
+  <div id="team-selection">
+    <h2>Select Number of Teams:</h2>
+    <button id="1-team">1 Team</button>
+    <button id="2-teams">2 Teams</button>
+    <button id="3-teams">3 Teams</button>
+  </div>
+  <div id="scoreboard" style="display: none;">
+    <h2>Scoreboard</h2>
+    <div id="scores"></div>
+  </div>
+  <div id="jeopardy-board"></div>
+  <div id="question-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-question"></h2>
+      <p id="modal-answer"></p>
+      <button id="reveal-answer">Reveal Answer</button>
+      <div id="score-buttons" style="display: none;">
+        <h3>Which team answered correctly?</h3>
+        <button id="team1-correct">Team 1</button>
+        <button id="team2-correct">Team 2</button>
+        <button id="team3-correct">Team 3</button>
+        <button id="no-one-correct">No One</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio elements for sound effects -->
+  <audio id="score-sound" src="score-sound.wav"></audio>
+  <audio id="womp-womp-sound" src="womp-womp.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
